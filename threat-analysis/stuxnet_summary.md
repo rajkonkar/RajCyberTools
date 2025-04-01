@@ -83,3 +83,37 @@ Here are prevention strategies every beginner in OT/ICS security should understa
 
 > Use Stuxnet as a case study to demonstrate your understanding of OT cyber risks and nation-state level threats.
 
+---
+
+## 🔁 My Take
+
+Stuxnet completely changed my perspective on cybersecurity — especially in critical infrastructure.  
+It wasn’t just a virus; it was a digital weapon. The fact that malware could silently damage physical systems, while fooling operators, proves how vital OT-specific security controls are.  
+
+Studying this case made me more interested in ICS/OT security, and I hope to contribute more tools and learning resources that help others understand threats like this.
+
+---
+
+## 🧠 MITRE ATT&CK for ICS Mapping (Stuxnet)
+
+| ICS Stage            | Technique Name                         | Technique ID     |
+|----------------------|----------------------------------------|------------------|
+| Initial Access       | Removable Media                        | T0861            |
+| Execution            | Exploitation for Client Execution      | T0863            |
+| Impact               | Manipulation of Control                | T0831            |
+| Evasion              | Masquerading                           | T0856            |
+| Collection           | Automated Collection                   | T0802            |
+
+🧩 Source: [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+
+---
+
+## 🎯 Did You Know?
+
+Stuxnet contained **4 zero-day exploits** — more than any malware ever discovered at the time.  
+It didn’t just attack software — it **modified PLC logic** to spin uranium centrifuges beyond safe levels, then **hid the evidence**.
+
+This was the birth of *cyber-physical warfare* — and it reshaped how nations think about digital defense.
+
+---
+

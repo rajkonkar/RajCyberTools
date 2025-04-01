@@ -95,4 +95,4 @@ GUI frontend or web-based visualizer
 🔐 Focus: Incident Response, Threat Detection, ICS/OT Security
 🛠️ Always learning, building, and open to collaborations
 
-📫 Connect with me on LinkedIn
+📫 Connect with me on LinkedIn -- https://www.linkedin.com/in/raj-konkar-b70b512a0/

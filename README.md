@@ -42,8 +42,12 @@ A Python-based CLI tool that simulates log detection for ICS/OT environments. It
 ```bash
 python3 ics_log_analyzer.py --file test_log.txt
 
+![Basic scan example](basic_scan.png)
+
 🎯 Filter by Command
 python3 ics_log_analyzer.py --file test_log.txt --keyword STOP_PROCESS
+
+![Filtered output with --keyword](filter_output.png)
 
 📁 Save Suspicious Output
 
@@ -52,6 +56,8 @@ python3 ics_log_analyzer.py --file test_log.txt --output suspicious.txt
 🔁 Real-Time Monitoring (like tail -f)
 
 python3 ics_log_analyzer.py --file test_log.txt --watch
+
+![Real-time monitoring with color-coded alerts](color_scheme_demo.png)
 
 🧪 Generate Sample Log for Testing
 

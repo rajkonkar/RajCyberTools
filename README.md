@@ -14,6 +14,37 @@ Welcome to my personal cybersecurity toolkit — a collection of hands-on projec
 
 ---
 
+### 🛡️ SSH Brute-force Detection (`ssh_log_monitor.py`)
+
+This script scans Linux authentication logs (e.g., `/var/log/auth.log`) and identifies IPs that failed multiple login attempts — a common brute-force attack pattern.
+
+#### 📸 Example Output
+
+![SSH Log Monitor Demo](ssh_log_monitor_demo.png)
+```
+**How it works:**
+- Parses lines with `Failed password` entries
+- Counts failed attempts per IP
+- Flags IPs with 3+ failures (customizable in script)
+
+**Usage Example:**
+
+```bash
+python3 ssh_log_monitor.py --file test_auth.log
+
+Or run it without --file to scan your system log directly (requires root):
+
+sudo python3 ssh_log_monitor.py
+
+🧪 You can simulate a test log like this:
+
+echo "Failed password for root from 192.168.1.101 port 22 ssh2" >> test_auth.log
+echo "Failed password for root from 192.168.1.102 port 22 ssh2" >> test_auth.log
+echo "Failed password for root from 192.168.1.102 port 22 ssh2" >> test_auth.log
+echo "Failed password for root from 192.168.1.102 port 22 ssh2" >> test_auth.log
+
+---
+
 ### 🧪 Simulated OT Labs
 
 | File                   | Description                                |

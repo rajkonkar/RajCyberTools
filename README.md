@@ -51,7 +51,61 @@ echo "Failed password for root from 192.168.1.102 port 22 ssh2" >> test_auth.log
 |------------------------|--------------------------------------------|
 | `conpot_setup_guide.md` | How to deploy a Conpot ICS honeypot locally |
 
+### 🧪 Conpot ICS Honeypot Lab
+
+This lab simulates an Industrial Control System (ICS) environment using the [Conpot](https://github.com/mushorg/conpot) honeypot. It's designed to demonstrate protocol emulation, threat detection, and real-time monitoring.
+
+| File | Description |
+|------|-------------|
+| `conpot_lab/` | Directory containing the conpot setup scripts and config |
+| `conpot_startup.png` | Screenshot showing successful startup of Conpot |
+| `curl_request.png` | Screenshot showing simulated curl request to Conpot |
+| `conpot_session_log.png` | Screenshot showing protocol session log |
+
 ---
+
+### 🛠️ Usage Instructions
+
+1. **Navigate to Conpot directory**:
+   ```bash
+   cd conpot_lab/conpot
+
+2. **Run Conpot using the default template and testing config**:
+     ```bash
+    python3 bin/conpot -f -t default
+
+3. **Verify it’s listening using curl**:
+     ```bash
+    curl http://localhost:8800
+
+📸 Example Screenshots
+
+✅ Conpot Startup
+Conpot running with the default template and -f test config:
+```
+![Conpot Startup](assets/conpot-lab/conpot_startup.png)
+```
+✅ Simulated HTTP Request
+Testing service using curl to simulate an HTTP GET request:
+```
+
+![Curl Request](assets/conpot-lab/curl_request.png)
+```
+✅ Session Log Output
+Shows protocol sessions (HTTP, FTP, Modbus, etc.) initializing and logging client activity:
+```
+![Session Log](assets/conpot-lab/conpot_session_log.png)
+```
+
+🔒 Takeaways
+
+    Conpot emulates ICS/SCADA devices and supports common protocols (Modbus, HTTP, SNMP, etc.)
+
+    Great for testing detection use cases in a safe lab setting
+
+    Useful as a feeder for other detection tools or SIEM systems
+---
+
 
 ### 📚 Threat Analysis Writeups
 

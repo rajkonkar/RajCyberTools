@@ -1,6 +1,60 @@
 # 🛡️ Raj's Cybersecurity Tools & Labs
 
-Welcome to my personal cybersecurity toolkit — a collection of hands-on projects, scripts, and research built during my MSc in Cybersecurity at the University of York (NCSC Certified). This repo showcases practical skills in **incident response**, **threat detection**, and **OT/ICS security** through real tools and learning resources.
+---
+
+### 🧭 Overview
+
+This repository is a growing collection of cybersecurity tools and hands-on labs where I apply everything I’ve learned so far — blending both offensive and defensive approaches. The projects here reflect my passion for real-world security workflows, from simulating ICS/OT honeypots to building log parsers and detection scripts.
+
+I’m currently expanding this toolkit as I continue:
+- 🎓 Completing the **Google Cybersecurity Certificate**
+- 🎯 Preparing for **CompTIA Security+** and **Network+** certifications
+- 🛠️ Gaining practical skills for **Red Team**, **Blue Team**, and **Purple Team** roles
+
+Each project is designed to reflect tasks commonly performed in real security teams, including alert triage, adversary simulation, endpoint forensics, and custom detection engineering.
+
+---
+
+### 🧪 Current Projects
+
+| Category | Tool | Description |
+|----------|------|-------------|
+| 🔍 Detection | `ssh_log_monitor.py` | Detects brute-force attempts by parsing Linux SSH logs in real time |
+| 🏭 OT/ICS Lab | `conpot-lab/` | Simulated industrial honeypot using Conpot with HTTP/SNMP/Modbus support |
+| 🧾 Threat Analysis | `stuxnet_summary.md` | Beginner-friendly writeup on Stuxnet + attack flow + detection tips |
+
+---
+
+### 🚀 Upcoming Projects (Planned)
+
+#### 🔴 Red Team Focused
+
+| Tool | Description |
+|------|-------------|
+| `phishing_sim_gen.py` | Generates phishing templates and payloads for awareness testing |
+| `AD_enum_tools/` | Enumerates Active Directory objects & permissions using `ldap3` & `impacket` |
+| `payload_obfuscator.py` | Encodes or evades reverse shell payloads for testing defenses |
+
+#### 🔵 Blue Team Focused
+
+| Tool | Description |
+|------|-------------|
+| `log_ruler.py` | Converts log entries into Sigma/YARA-style detection rules |
+| `pcap_intrusion_parser.py` | Detects beacons & malware behavior from packet captures |
+| `SIEM_data_simulator/` | Creates synthetic Windows/Linux/Sysmon logs for SIEM testing |
+| `alert_triage_assistant.py` | Enriches alert data using WHOIS/IP reputation/OSINT sources |
+
+#### 🟣 Purple Team Integrations
+
+| Tool | Description |
+|------|-------------|
+| `mitre_attack_mapper.py` | Maps detections to MITRE ATT&CK tactics/techniques |
+| `endpoint_hunt_pack/` | Script pack for live hunting: persistence, autoruns, network anomalies |
+| `conpot_enhancer/` | Adds decoy triggers and response simulation to Conpot setup |
+
+---
+
+👷‍♂️ Everything here is in active development and designed to scale — all feedback, issues, and collaboration welcome!
 
 ---
 

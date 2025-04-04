@@ -21,6 +21,7 @@ This script scans Linux authentication logs (e.g., `/var/log/auth.log`) and iden
 #### 📸 Example Output
 
 ![SSH Log Monitor Demo](ssh_log_monitor_demo.png)
+
 ```
 **How it works:**
 - Parses lines with `Failed password` entries
@@ -63,6 +64,7 @@ This lab simulates an Industrial Control System (ICS) environment using the [Con
 | `conpot_session_log.png` | Screenshot showing protocol session log |
 
 ---
+The following lab demonstrates how to simulate an ICS honeypot using Conpot.
 
 ### 🛠️ Usage Instructions
 
@@ -84,17 +86,20 @@ This lab simulates an Industrial Control System (ICS) environment using the [Con
 Conpot running with the default template and -f test config:
 ```
 ![Conpot Startup](assets/conpot-lab/conpot_startup.png)
+
 ```
 ✅ Simulated HTTP Request
 Testing service using curl to simulate an HTTP GET request:
 ```
 
 ![Curl Request](assets/conpot-lab/curl_request.png)
+
 ```
 ✅ Session Log Output
 Shows protocol sessions (HTTP, FTP, Modbus, etc.) initializing and logging client activity:
 ```
 ![Session Log](assets/conpot-lab/conpot_session_log.png)
+
 ```
 
 🔒 Takeaways
